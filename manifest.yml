@@ -1,0 +1,14 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: nodejscloudantcodemonitorcf
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 256MB
+  domain: mybluemix.net
+  host: nodejs-cloudant-codemonitor-cf
+  services:
+    - nodejs-cloudant-code-cloudant-1580482808439-91915
+    
